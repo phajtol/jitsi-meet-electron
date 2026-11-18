@@ -16,6 +16,7 @@ import Page from '../../shared/components/Page';
 import { createConferenceObjectFromURL } from '../../utils';
 import { Body, Form, Header, Label, Wrapper } from '../styled';
 
+let autoJoined = false;
 
 const MainFieldText = styled(FieldText)`
     input {
@@ -61,7 +62,7 @@ class Welcome extends Component<IProps, IWelcomeState> {
         super(props);
 
         // Initialize url value in state if passed using location state object.
-        let url = '';
+        let url = 'zasadacka';
 
         // Check and parse url if exists in location state.
         if (props.location?.state) {
@@ -95,6 +96,11 @@ class Welcome extends Component<IProps, IWelcomeState> {
      */
     componentDidMount() {
         this._updateRoomname();
+        
+        if (!autoJoined) {
+            autoJoined = true;
+            this._onJoin();
+        }
     }
 
     /**

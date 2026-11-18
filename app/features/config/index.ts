@@ -8,23 +8,23 @@ export default {
     /**
      * The URL to the source code repository.
      */
-    sourceURL: 'https://github.com/jitsi/jitsi-meet-electron',
+    sourceURL: 'https://github.com/phajtol/jitsi-meet-electron',
 
     /**
      * Application name.
      */
-    appName: 'Jitsi Meet',
+    appName: 'ENKO Zasadačka',
 
     /**
     * The prefix for application protocol.
     * You will also need to replace this in package.json.
     */
-    appProtocolPrefix: 'jitsi-meet',
+    appProtocolPrefix: 'enkogroup-meet',
 
     /**
      * The default server URL of Jitsi Meet Deployment that will be used.
      */
-    defaultServerURL: 'https://meet.jit.si',
+    defaultServerURL: 'https://meet.enkogroup.eu',
 
     /**
      * The default server Timeout in seconds.
@@ -34,7 +34,7 @@ export default {
     /**
      * URL to send feedback.
      */
-    feedbackURL: 'https://github.com/jitsi/jitsi-meet-electron/issues',
+    feedbackURL: 'https://github.com/phajtol/jitsi-meet-electron/issues',
 
     /**
      * The URL of Privacy Policy Page.

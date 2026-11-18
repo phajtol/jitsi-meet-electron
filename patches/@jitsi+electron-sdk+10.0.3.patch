@@ -1,0 +1,18 @@
+diff --git a/node_modules/@jitsi/electron-sdk/.DS_Store b/node_modules/@jitsi/electron-sdk/.DS_Store
+new file mode 100644
+index 0000000..6c850bf
+Binary files /dev/null and b/node_modules/@jitsi/electron-sdk/.DS_Store differ
+diff --git a/node_modules/@jitsi/electron-sdk/screensharing/main.js b/node_modules/@jitsi/electron-sdk/screensharing/main.js
+index 3cce18e..63ebfda 100644
+--- a/node_modules/@jitsi/electron-sdk/screensharing/main.js
++++ b/node_modules/@jitsi/electron-sdk/screensharing/main.js
+@@ -139,7 +139,8 @@ class ScreenShareMainHook {
+     _onScreenSharingEvent(event, { data }) {
+         switch (data.name) {
+             case SCREEN_SHARE_EVENTS.OPEN_TRACKER:
+-                this._createScreenShareTracker();
++                // ENKO: tracker okno nechceme
++                // this._createScreenShareTracker();
+                 break;
+             case SCREEN_SHARE_EVENTS.CLOSE_TRACKER:
+                 if (this._screenShareTracker) {

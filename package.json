@@ -1,10 +1,10 @@
 {
   "name": "jitsi-meet-electron",
   "version": "2026.10.0",
-  "description": "Electron application for Jitsi Meet",
+  "description": "Electron application for ENKO Zasadacka",
   "main": "./build/main.js",
-  "productName": "Jitsi Meet",
-  "desktopName": "org.jitsi.jitsi-meet",
+  "productName": "ENKO Zasadacka",
+  "desktopName": "eu.enkogroup.zasadacka",
   "private": true,
   "scripts": {
     "start": "node ./esbuild.js --dev && concurrently \"npm:watch\" \"electron ./build/main.js\"",
@@ -21,8 +21,8 @@
     "node": ">=24.0.0"
   },
   "build": {
-    "appId": "org.jitsi.jitsi-meet",
-    "productName": "Jitsi Meet",
+    "appId": "eu.enkogroup.zasadacka",
+    "productName": "ENKO Zasadacka",
     "generateUpdatesFilesForAllChannels": true,
     "npmRebuild": false,
     "files": [
@@ -35,11 +35,11 @@
       "artifactName": "jitsi-meet.${ext}",
       "target": [
         {
-          "arch": "universal",
+          "arch": "arm64",
           "target": "dmg"
         },
         {
-          "arch": "universal",
+          "arch": "arm64",
           "target": "zip"
         }
       ],
@@ -106,7 +106,7 @@
         "name": "jitsi-protocol",
         "role": "Viewer",
         "schemes": [
-          "jitsi-meet"
+          "enkogroup-meet"
         ]
       }
     ]
